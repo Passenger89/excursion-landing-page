@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+  --ff-heading: Verdana, sans-serif;
+  --fs-heading-h1: 5rem;
+  --clr-heading: rgba(245, 245, 245, 1);
+  --ff-main: Verdana, sans-serif;
+  --fw-h1: 400;
+  --fw-h2: 300;
+  --clr-p: rgba(245, 245, 245, 0.75);
+}
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: solid 2px red;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: var(--ff-main);
+  color: var(--p-clr);
+}
+
+.headings {
+  font-family: var(--ff-heading);
+  color: var(--clr-heading);
+}
+.h1.headings {
+  font-size: var(--fs-heading-h1);
+  font-weight: var(--fw-h1);
+}
+
+header {
+  border: 2px solid blue;
+}
+
+main {
+  border: 2px solid green;
+}
+footer {
+  border: 2px solid orange;
+}
