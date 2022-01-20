@@ -2,11 +2,15 @@ html {
   font-size: 62.5%;
   --ff-heading: Verdana, sans-serif;
   --fs-heading-h1: 5rem;
+  --fs-heading-h2: 4.2rem;
   --clr-heading: rgba(245, 245, 245, 1);
-  --ff-main: Verdana, sans-serif;
   --fw-h1: 400;
   --fw-h2: 300;
   --clr-p: rgba(245, 245, 245, 0.75);
+  --ff-main: Verdana, sans-serif;
+  --fs-main: 2.1rem;
+  --fs-links: 1.6rem;
+  --clr-links: rgba(127, 255, 212, 1);
 }
 
 body {
@@ -15,7 +19,6 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border: solid 2px red;
 }
 
 header,
@@ -25,12 +28,27 @@ footer {
   flex-direction: column;
   min-width: 100%;
   align-items: center;
-  justify-content: center;
+  margin: 1rem;
+}
+
+main > * {
+  margin: 1rem;
+}
+
+footer {
+  align-items: flex-end;
+  padding: 1rem;
 }
 
 p {
   font-family: var(--ff-main);
-  color: var(--p-clr);
+  font-size: var(--fs-main);
+  color: var(--clr-p);
+}
+
+a {
+  font-size: var(--fs-links);
+  color: var(--clr-links);
 }
 
 .headings {
@@ -41,14 +59,7 @@ p {
   font-size: var(--fs-heading-h1);
   font-weight: var(--fw-h1);
 }
-
-header {
-  border: 2px solid blue;
-}
-
-main {
-  border: 2px solid green;
-}
-footer {
-  border: 2px solid orange;
+.h2.headings {
+  font-size: var(--fs-heading-h2);
+  font-weight: var(--fw-h2);
 }
